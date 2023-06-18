@@ -1,0 +1,248 @@
+body {
+   background-image: url(media/quiz.jpg);
+   background-size: cover;
+   display: flex;
+   /* Använder flexbox för att centrera innehållet */
+   justify-content: center;
+   /* Centrerar innehållet horisontellt */
+   align-items: center;
+   /* Centrerar innehållet vertikalt */
+   flex-direction: column;
+   /* Anger riktningen för flexbox */
+   text-align: center;
+   /* Centrerar texten horisontellt */
+   min-height: 20%;
+   /* Lägg till en minsta höjd för att täcka hela sidan */
+   color: white;
+   /* Textfärg */
+   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+   /* Typsnitt */
+}
+
+form {
+   margin-bottom: 2%;
+   /* Marginal nedåt */
+   font-size: 28px;
+   /* Typsnittets storlek */
+}
+
+h2 {
+   background-color: #5acff5;
+   /* Bakgrundsfärg */
+   padding: 2%;
+   /* Utfyllnad runt elementet */
+   border-radius: 10px;
+   /* Rundade hörn */
+   border: 2px solid #5acff5;
+   /* Kantdekoration */
+   color: #000;
+   /* Textfärg */
+   margin: 0;
+   /* Marginal runt elementet */
+   margin-bottom: 2%;
+   /* Marginal nedåt */
+   max-width: 70vw;
+   /* Maximal bredd för elementet */
+}
+
+h1 {
+   font-size: 20px;
+   /* Typsnittets storlek */
+}
+
+input {
+   width: 150%;
+   /* Bredden på elementet */
+   max-width: 400px;
+   /* Maximal bredd för elementet */
+   height: 10vh;
+   /* Höjden på elementet */
+   background: rgb(130, 135, 164);
+   /* Bakgrundsfärg */
+   font-size: 18px;
+   /* Typsnittets storlek */
+   margin: auto;
+   /* Automatisk marginal */
+   display: flex;
+   /* Använder flexbox */
+   align-items: center;
+   /* Centrerar innehållet vertikalt */
+   justify-content: center;
+   /* Centrerar innehållet horisontellt */
+   cursor: pointer;
+   /* Visar pilmarkören när musen hovrar över elementet */
+   margin-top: 3%;
+   /* Marginal uppåt */
+   accent-color: #5acff5;
+   /* Accentfärg */
+}
+
+#logo {
+   display: flex;
+   /* Använder flexbox för att centrera innehållet */
+   justify-content: center;
+   /* Centrerar innehållet horisontellt */
+   align-items: center;
+   /* Centrerar innehållet vertikalt */
+   height: 100px;
+   /* Höjden på elementet */
+}
+
+.centered-image {
+   max-width: 100%;
+   /* Maximal bredd för elementet */
+   max-height: 100%;
+   /* Maximal höjd för elementet */
+   margin: auto;
+   /* Automatisk marginal */
+   display: block;
+   /* Visar elementet som ett block */
+}
+
+#submit-button,
+#popup>button {
+   margin-top: 20px;
+   /* Marginal uppåt */
+   width: 150px;
+   /* Bredden på elementet */
+   height: 50px;
+   /* Höjden på elementet */
+   font-size: 18px;
+   /* Typsnittets storlek */
+   background-color: #5acff5;
+   /* Bakgrundsfärg */
+   color: #000;
+   /* Textfärg */
+   border-radius: 10px;
+   /* Rundade hörn */
+   border: none;
+   /* Inget kantdekoration */
+   cursor: pointer;
+   /* Visar pilmarkören när musen hovrar över elementet */
+}
+
+#popup {
+   position: fixed;
+   /* Positionerar elementet relativt till webbläsarfönstret */
+   top: 50%;
+   /* Positionerar från toppen av webbläsarfönstret */
+   left: 50%;
+   /* Positionerar från vänster i webbläsarfönstret */
+   transform: translate(-50%, -50%);
+   /* Centrerar elementet i mitten av webbläsarfönstret */
+   background-color: #064960;
+   /* Bakgrundsfärg */
+   color: #fff;
+   /* Textfärg */
+   padding: 80px;
+   /* Utfyllnad runt elementet */
+   border-radius: 10px;
+   /* Rundade hörn */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   /* Skugga runt elementet */
+   z-index: 9999;
+   /* Staplingsordning */
+   font-size: 35px;
+   /* Typsnittets storlek */
+}
+
+.hidden {
+   display: none;
+   /* Döljer elementet */
+}
+
+#fire1 {
+   position: fixed;
+   /* Positionerar elementet relativt till webbläsarfönstret */
+   top: 15%;
+   /* Positionerar från toppen av webbläsarfönstret */
+   left: 3%;
+   /* Positionerar från vänster i webbläsarfönstret */
+   height: 70vh;
+   /* Höjden på elementet */
+   z-index: 9999;
+   /* Staplingsordning */
+}
+
+#fire2 {
+   position: fixed;
+   /* Positionerar elementet relativt till webbläsarfönstret */
+   top: 15%;
+   /* Positionerar från toppen av webbläsarfönstret */
+   right: 3%;
+   /* Positionerar från höger i webbläsarfönstret */
+   height: 70vh;
+   /* Höjden på elementet */
+   z-index: 9999;
+   /* Staplingsordning */
+}
+
+#fail {
+   position: fixed;
+   /* Positionerar elementet relativt till webbläsarfönstret */
+   height: 100vh;
+   /* Höjden på elementet */
+   width: 100vw;
+   /* Bredden på elementet */
+   top: 0;
+   /* Positionerar från toppen av webbläsarfönstret */
+}
+
+#image-container {
+   position: fixed;
+   /* Positionerar elementet relativt till webbläsarfönstret */
+   top: 10px;
+   /* Positionerar från toppen av webbläsarfönstret */
+   left: 10px;
+   /* Positionerar från vänster i webbläsarfönstret */
+   display: flex;
+   /* Använder flexbox */
+   flex-direction: column;
+   /* Anger riktningen för flexbox */
+   align-items: center;
+   /* Centrerar innehållet vertikalt */
+   color: white;
+   /* Textfärg */
+   font-size: 16px;
+   /* Typsnittets storlek */
+}
+
+#travelbug-image {
+   width: 80px;
+   /* Bredden på elementet */
+   height: auto;
+   /* Automatisk höjd för att behålla proportionerna */
+}
+
+#travelbug-image,
+p {
+   margin: 0;
+   /* Marginal runt elementet */
+   font-size: 11px;
+   /* Typsnittets storlek */
+
+}
+
+#geo a {
+   color: transparent;
+   text-decoration: none;
+}
+
+#touch-image {
+   position: fixed;
+   top: 10px;
+   right: 10px;
+   width: 100px;
+   height: auto;
+   display:
+}
+
+#touch {
+   position: fixed;
+   top: 100px;
+   /* Justera detta värde för att ändra den vertikala positionen */
+   right: 40px;
+   width: 100px;
+   height: auto;
+   display:
+}
